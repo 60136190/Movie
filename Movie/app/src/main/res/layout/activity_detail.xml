@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:text="TextView"
+        android:padding="10dp"
+      />
+    <view
+        android:id="@+id/youtubePlay"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnPlay"
+        android:textColor="@color/white"
+        android:background="@drawable/border_btn_play"
+        android:text="Play"/>
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/material_motion_easing_accelerated"
+            android:textColor="@color/gray"
+            android:id="@+id/tv_detail1"/>
+    </ScrollView>
+</LinearLayout>
+</RelativeLayout>
